@@ -16,12 +16,12 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 init(autoreset=True)
 
-class JARVIS:
+class Eva:
 
     def __init__(self):
 
         self.chat_history = [
-        {"role": "system", "content": "You are JARVIS close similar to same JARVIS in Iron Man movie but created by me your boss Gaurav. You are a helpful Assistant. Keep your answers short and concise. I am Gaurav your boss who is an AI engineer. Address me only as Sir."}
+        {"role": "system", "content": "You are Eva close similar to same Eva in Iron Man movie but created by me your boss Gaurav. You are a helpful Assistant. Keep your answers short and concise. I am Gaurav your boss who is an AI engineer. Address me only as Sir."}
         ]
         self.transcription_api_key = get_transcription_api_key()
         self.response_api_key = get_response_api_key()
@@ -158,7 +158,7 @@ class JARVIS:
         else:
             return "Sorry Sir! Unable to do the task provided"
 
-    def run_jarvis(self):
+    def run_Eva(self):
 
         try:
             
@@ -203,9 +203,6 @@ class JARVIS:
             time.sleep(1)
 
 if __name__ == "__main__":
-    jarvis = JARVIS()
+    eva = Eva()
     while True:
-        jarvis.run_jarvis()
-            
-
-
+        eva.run_Eva()
