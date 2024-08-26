@@ -1,4 +1,4 @@
-from modules.config import Config
+from lib.config import Config
 
 def get_transcription_api_key():
     """
